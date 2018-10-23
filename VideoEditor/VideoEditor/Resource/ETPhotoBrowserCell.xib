@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ETPhotoBrower" customModule="VideoEditor" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ETPhotoBrowserCell" rowHeight="65" id="wdt-dx-mEg" customClass="ETPhotoBrowserCell" customModule="VideoEditor" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wdt-dx-mEg" id="lE3-3a-LvV">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LBU-6t-52J">
+                        <rect key="frame" x="12" y="2.5" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="9QB-5w-QR8"/>
+                            <constraint firstAttribute="width" secondItem="LBU-6t-52J" secondAttribute="height" multiplier="1:1" id="qNc-A4-gH4"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Xg-G8-Lbr">
+                        <rect key="frame" x="80" y="22" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aj6-Jv-Q6v">
+                        <rect key="frame" x="132" y="22" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="5Xg-G8-Lbr" firstAttribute="leading" secondItem="LBU-6t-52J" secondAttribute="trailing" constant="8" id="4R0-Ff-kD6"/>
+                    <constraint firstItem="aj6-Jv-Q6v" firstAttribute="centerY" secondItem="lE3-3a-LvV" secondAttribute="centerY" id="Dh6-xD-kDl"/>
+                    <constraint firstItem="5Xg-G8-Lbr" firstAttribute="centerY" secondItem="lE3-3a-LvV" secondAttribute="centerY" id="Uvd-5W-Lu4"/>
+                    <constraint firstItem="LBU-6t-52J" firstAttribute="centerY" secondItem="lE3-3a-LvV" secondAttribute="centerY" id="XD9-WS-mJt"/>
+                    <constraint firstItem="LBU-6t-52J" firstAttribute="leading" secondItem="lE3-3a-LvV" secondAttribute="leading" constant="12" id="mW6-wV-hnL"/>
+                    <constraint firstItem="aj6-Jv-Q6v" firstAttribute="leading" secondItem="5Xg-G8-Lbr" secondAttribute="trailing" constant="10" id="qUH-wP-eaa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countLabel" destination="aj6-Jv-Q6v" id="dLr-re-K8I"/>
+                <outlet property="headImageView" destination="LBU-6t-52J" id="uZW-Uj-frf"/>
+                <outlet property="titleLabel" destination="5Xg-G8-Lbr" id="0tB-7x-gHY"/>
+            </connections>
+            <point key="canvasLocation" x="224.80000000000001" y="-132.68365817091455"/>
+        </tableViewCell>
+    </objects>
+</document>
